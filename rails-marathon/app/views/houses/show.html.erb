@@ -1,0 +1,22 @@
+<h1> 
+	House: <%= @house.name %>...
+	Source: <%= @house.source %>...  
+	Author: <%= @house.author %>...
+	Motto (if there is one): <%= @house.motto %>...
+	Created At: <%= @house.created_at.strftime("%B %d %Y") %>
+<h1>
+
+<% if flash[:notice] %>
+  <div class="notice"><%= flash[:notice] %></div>
+<% end %>
+
+<div>
+	<% @members.each do |member| %>
+		<%= member.first_name %> <%= member.last_name %>
+	<% end %>
+</div>
+
+<div>
+	<%= link_to 'Add a House Member', new_house_member_path(@house) %>
+</div>
+

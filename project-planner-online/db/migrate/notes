@@ -1,0 +1,19 @@
+——-
+QUESTIONS
+
+———
+NOTES
+
+pry -r './server.rb'
+
+validations: put all in model, put important ones also in migration
+
+for migrations… null: false
+for models… presence: true
+
+the model with the foreign key always has a belongs_to
+
+---
+SYSTEM-CHECK
+
+10/5: sql/activerecord, er diagrams, migrations, validations, associations, join tables

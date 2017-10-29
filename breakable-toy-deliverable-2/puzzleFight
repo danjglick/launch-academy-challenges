@@ -1,0 +1,33 @@
+- I have wireframes (with app description), er diagrams, and user stories
+  - in a google drive folder at
+    - https://drive.google.com/open?id=0B4GCUW7rz66LV2t5aC1aYmNFMTA
+- I have a working react-rails app 
+  - user can
+    - view a responsive 6x6 grid
+    - click a button to randomize grid positions for player, an enemy, and a reward
+    - use arrow keys to move player around the grid
+    - view the number of moves made
+    - run into an enemy to empty the grid and zero the score
+  - there is also a mostly-working database
+- I have planned out the react file structure. 
+  - This is probably where I have the most questions/doubts
+
+
+    - app component
+      - intro-box container
+        - sign-up/in/out component
+      - game-box container
+        - grid container
+          - game-piece component
+        - status-bars container
+          - status-bar component
+          
+  
+          
+  - game-box container 
+    - grid container
+      - game-piece component
+    - status-bars container
+      - status-bar component
+  
+  

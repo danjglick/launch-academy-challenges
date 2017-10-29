@@ -1,0 +1,13 @@
+<body>
+	<div> GROCERIES </div>
+	<ul>
+		<% @grocery_list.each do |item| %>
+			<li> <%= item.join(",") %> </li>
+		<% end %>
+	</ul>
+	<form action="/grocery-list" name="name" method="post">
+	  <label for="item"> Name </label>
+	  <input type="text" id="item" name="item">
+	 	<button type="submit" id="add" name="add"> Add </button>
+	</form>
+</body>

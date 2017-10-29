@@ -1,0 +1,33 @@
+<h1>New House Form</h1>
+
+<%= form_for @house do |f| %>
+	<div class="field">
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</div>
+
+	<div class="field">
+		<%= f.label :author %>
+		<%= f.text_field :author %>
+	</div>
+
+	<div class="field">
+		<%= f.label :source %>
+		<%= f.text_field :source %>
+	</div>
+
+	<div class="field">
+		<%= f.label :motto %>
+		<%= f.text_field :motto %>
+	</div>
+
+	<div class="actions">
+		<%= f.submit "Add House" %>
+	</div>
+<% end %>
+
+<% if @form_error %>
+	<% @form_error.each do |error| %>
+		<p><%= error %><p>
+	<% end %>
+<% end %>		
